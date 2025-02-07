@@ -16,8 +16,10 @@ export default tseslint.config(
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
+      "simple-import-sort": simpleimportsort,
     },
     rules: {
+      "simple-import-sort/imports": error,
       ...reactHooks.configs.recommended.rules,
       "react-refresh/only-export-components": [
         "warn",

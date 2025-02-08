@@ -28,8 +28,6 @@ export function SignUp() {
 
   async function handleSignUp(data: SignUpForm) {
     try {
-      console.log(data);
-
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       toast.success("Enviamos um link de autenticação para seu e-mail.", {

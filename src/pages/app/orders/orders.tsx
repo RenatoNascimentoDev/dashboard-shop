@@ -1,6 +1,5 @@
 import { ArrowRight, Search, X } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -45,7 +44,7 @@ export function Orders() {
                 return (
                   <TableRow key={i}>
                     <TableCell>
-                      <Button variant="outline" size="xs">
+                      <Button variant="outline" size="8">
                         <Search className="h-3 w-3" />
                         <span className="sr-only">Detalhes do pedido</span>
                       </Button>
@@ -69,13 +68,13 @@ export function Orders() {
                     </TableCell>
                     <TableCell className="font-medium">R$ 149,90</TableCell>
                     <TableCell>
-                      <Button variant="outline" size="xs">
+                      <Button variant="outline" size="8">
                         <ArrowRight className="mr-2 h-3 w-3" />
                         Aprovar
                       </Button>
                     </TableCell>
                     <TableCell>
-                      <Button variant="ghost" size="xs">
+                      <Button variant="ghost" size="8">
                         <X className="mr-2 h-3 w-3" />
                         Cancelar
                       </Button>
